@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ab10c0;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #921a1a;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aa4141;
+    border-radius: 4px;
+}
+
+.formulario button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: rgb(109, 44, 44);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #45a049;
+}
+/* Fondo de la página - imagen */
+body {
+    background-image: url('https://images.pexels.com/photos/2698519/pexels-photo-2698519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem 1rem;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Fondo semitransparente del formulario para mejor legibilidad */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(107, 0, 163, 0.75); /* morado semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    color: #fff;
+}
+
+/* Estilo para encabezados */
+h1 {
+    color: #f2d6ff;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Estilo para párrafos */
+p {
+    color: #e6ccff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* Etiquetas de formulario */
+label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+/* Inputs de formulario */
+input[type="text"],
+input[type="email"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Colores de input para contraste con fondo oscuro */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #ddd;
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+/* Botón de enviar */
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #7a1ea1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(122, 30, 161, 0.6);
+}
+
+button[type="submit"]:hover {
+    background-color: #520d79;
+    box-shadow: 0 6px 12px rgba(82, 13, 121, 0.8);
+}
