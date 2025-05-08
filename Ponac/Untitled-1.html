@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Edad y Bucle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #bc9ef5;
+        }
+
+        .mensaje {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .menor {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿ERES MAYOR O MENOR?</h1>
+    <div id="resultado" class="mensaje"></div>
+
+    <script>
+        // Solicita la edad al usuario
+        let edad = prompt("Por favor, ingresa tu edad:");
+
+        // Convierte el valor ingresado a número
+        edad = Number(edad);
+
+        // Selecciona el contenedor para mostrar el resultado
+        const resultado = document.getElementById("resultado");
+
+        // Verifica si es mayor o menor de edad
+        if (edad >= 18) {
+            resultado.textContent = "Eres mayor de edad.";
+        } else if (!isNaN(edad)) {
+            resultado.textContent = "Eres menor de edad.";
+            resultado.classList.add("menor");
+        } else {
+            resultado.textContent = "Entrada no válida. Por favor recarga la página e ingresa un número.";
+            resultado.classList.add("menor");
+        }
+
+        // Imprime los números del 1 al 10 en la consola
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
